@@ -1,0 +1,19 @@
+numeros = [10, 23, 5, 8, 12, 33, 42, 7, 19, 28, 3, 16, 9, 50, 21]
+soma = sum(numeros)
+contagem_de_numeros = len(numeros)
+maior = max(numeros)
+menor = min(numeros)
+def calcular():
+    media = soma / contagem_de_numeros
+    maior = max(numeros)
+    menor = min(numeros)
+    contador = 0
+    for numero in numeros:
+        if numero % 2 == 0:
+           contador += 1
+    return media, maior, menor, contador
+media1, maior1, menor1, contador1 = calcular()
+print(f"Média: {media1}")
+print(f"maior numero: {maior1}")
+print(f"menor numero: {menor1}")
+print(f"quantidade de numeros pares: {contador1}")
